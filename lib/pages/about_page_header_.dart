@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_portfolio/utill/common.dart';
@@ -13,7 +14,9 @@ class AboutPageHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text('안녕하세요,'),
-          Text('Flutter 개발자 김현수입니다.')
+          AnimatedTextKit(
+            totalRepeatCount: 100,
+              animatedTexts: [TypewriterAnimatedText('<Flutter 개발자 김현수입니다.>',speed: Duration(milliseconds: 80))],)
         ],
       ),
     );
