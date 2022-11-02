@@ -14,9 +14,7 @@ class AboutPageHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text('안녕하세요,'),
-          AnimatedTextKit(
-            totalRepeatCount: 100,
-              animatedTexts: [TypewriterAnimatedText('<Flutter 개발자 김현수입니다.>',speed: Duration(milliseconds: 80))],)
+          Text('<Flutter 개발자 김현수입니다.>')
         ],
       ),
     );
