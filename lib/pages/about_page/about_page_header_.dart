@@ -9,12 +9,16 @@ class AboutPageHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: mediaHeight(context, 0.3),
+      padding:baseAllPadding(context),
+      height: mediaHeight(context, 0.4),
+      width: mediaWidth(context, 1),
+      color: Colors.grey,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('안녕하세요,'),
-          Text('<Flutter 개발자 김현수입니다.>')
+          Text('안녕하세요,',style: TextStyle(fontSize: 40),),
+          Text('Flutter 개발자 김현수입니다.',style: TextStyle(fontSize: 40),)
         ],
       ),
     );
