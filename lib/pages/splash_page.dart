@@ -15,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
   
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 3)).whenComplete(() => Get.offAll(MainPage(),transition: Transition.fadeIn));
+    Future.delayed(Duration(seconds: 5)).whenComplete(() => Get.offAll(MainPage(),transition: Transition.fadeIn));
     super.initState();
   }
   @override
@@ -27,7 +27,7 @@ class _SplashPageState extends State<SplashPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AnimatedTextKit(
-              totalRepeatCount: 2,
+              totalRepeatCount: 5,
               animatedTexts: [TypewriterAnimatedText('<HyeonSoo KIM>',speed: Duration(milliseconds: 80))],
             ),
           ],

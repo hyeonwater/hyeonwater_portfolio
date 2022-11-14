@@ -30,7 +30,9 @@ class MainPage extends StatelessWidget {
               children: [
                 CupertinoButton(
                   padding: EdgeInsets.zero,
-                    child: Text('ABOUT',style: TextStyle(color: Colors.black),), onPressed: (){Get.to(AboutMainPage(),transition: Transition.fadeIn);}),
+                    child: Text('ABOUT',style: TextStyle(color: Colors.black),), onPressed: () {
+                    Get.to(() => AboutMainPage(),transition: Transition.fadeIn);
+                  }),
                 CupertinoButton(
                   padding: EdgeInsets.zero,
                     child: Text('PORTFOLIO',style: TextStyle(color: Colors.black),), onPressed: () => Get.to(PortfolioPage()))

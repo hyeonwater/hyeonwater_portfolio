@@ -59,7 +59,46 @@ class AboutPageBody extends StatelessWidget {
           SizedBox(
             height: mediaHeight(context, 0.05),
           ),
-          Text('소프트웨어 개발자로서 클린 코드가 중요하다고 생각합니다. 개발자 개개인의 코드 스타일은 다 다르다고 생각합니다. 클린 코드를 통해 상대방이 저의 코드를 보기 편하고 또한 내가 한 코드를 유지 보수를 하기 용이하다고 생각하기 때문입니다.', style: CustomTextStyle.w400(context))
+          Text('소프트웨어 개발자로서 클린 코드가 중요하다고 생각합니다. 개발자 개개인의 코드 스타일은 다 다르다고 생각합니다. 클린 코드를 통해 상대방이 저의 코드를 보기 편하고 또한 내가 한 코드를 유지 보수를 하기 용이하다고 생각하기 때문입니다.', style: CustomTextStyle.w400(context)),
+          Container(
+            margin: EdgeInsets.only(top: mediaHeight(context, 0.02)),
+              child: Text('Work Experience',style: TextStyle(fontSize: 35),)),
+          Container(
+            margin: baseVerticalPadding(context)/2,
+            child: Divider(
+              thickness: mediaHeight(context, 0.005),),
+          ),
+          Text('뉴로서킷 : 2022.03 ~ (현재)',style: CustomTextStyle.w600(context,scale: 0.025),),
+          Row(
+            children: [
+              Container(
+                margin: baseVerticalPadding(context)/2,
+                  child: Text('바야바즈 앱 (2022.05 ~ 2022.07)',style: CustomTextStyle.w500(context,scale: 0.02))),
+              CupertinoButton(
+                  child: FaIcon(FontAwesomeIcons.android,color: Colors.black,size: mediaHeight(context, 0.02),),
+              onPressed: (){
+                    openURL(url: 'https://play.google.com/store/apps/details?id=com.neurocircuit.bayabas.flutter');
+              }
+              ),
+              CupertinoButton(
+                  child: FaIcon(FontAwesomeIcons.apple,color: Colors.black,size: mediaHeight(context, 0.02),),
+                  onPressed: (){
+                    openURL(url: 'https://apps.apple.com/kr/app/%EB%B0%94%EC%95%BC%EB%B0%94%EC%A6%88/id1631768678');
+                  }
+              ),
+            ],
+          ),
+          Text('뉴로서킷의 메인 프로젝트.',style: CustomTextStyle.w400(context),),
+          Text('바야바즈 메인 앱으로 습관을 개선하여 탈모를 예방한다는 목표를 가지고 만들어진 앱으로 습관 관리 개선 및 나의 두피 진단 등 콘텐츠를 이용할 수 있으며 그로 인해 얻어지는 화폐 개념의 구아바를 이용하여 제품 및 여러 콘텐츠를 즐길 수 있는 앱 입니다.',style: CustomTextStyle.w400(context),),
+          SizedBox(
+            height: mediaHeight(context, 0.02),
+          ),
+          Text('- 앱 기획부터 런칭까지 진행',style: CustomTextStyle.w400(context)),
+          Text('- 백엔드 개발자분들과의 Rest API 사용',style: CustomTextStyle.w400(context),),
+          Text('- Adobe XD를 활용하여 디자이너분과의 협업',style: CustomTextStyle.w400(context)),
+          Container(
+              margin: baseVerticalPadding(context)/2,
+              child: Text('카미나비 (2022.03 ~ 2022.05)',style: CustomTextStyle.w500(context,scale: 0.02))),
         ],
       ),
     );
