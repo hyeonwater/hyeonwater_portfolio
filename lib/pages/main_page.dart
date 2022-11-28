@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_portfolio/pages/portfolio_page.dart';
+import 'package:my_portfolio/pages/portfolio_page/portfolio_page.dart';
 import 'package:my_portfolio/utill/common.dart';
 
 import 'about_page/about_main_page.dart';
