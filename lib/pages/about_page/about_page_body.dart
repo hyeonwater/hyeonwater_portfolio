@@ -99,7 +99,7 @@ class AboutPageBody extends StatelessWidget {
           Container(
               margin: baseVerticalPadding(context)/2,
               child: Text('카미나비 (2022.03 ~ 2022.05)',style: CustomTextStyle.w500(context,scale: 0.02))),
-          Text('카니나비 앱은 일본 탈모회사 1위 기업인 Reve21과의 협업을 진행을 하였습니다. 진단, 미션, 이벤트 뽑기를 통해 사용자들의 두피상태에 맞게 매일 바뀌는 미션을 함으로 탈모치료를 할 수 있는 앱 입니다.',style: CustomTextStyle.w400(context),),
+          Text('카미나비 앱은 일본 탈모회사 1위 기업인 Reve21과의 협업을 진행을 하였습니다. 진단, 미션, 이벤트 뽑기를 통해 사용자들의 두피상태에 맞게 매일 바뀌는 미션을 함으로 탈모치료를 할 수 있는 앱 입니다.',style: CustomTextStyle.w400(context),),
           SizedBox(
             height: mediaHeight(context, 0.02),
           ),
