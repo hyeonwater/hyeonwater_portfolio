@@ -8,6 +8,7 @@ class PortfolioBayabas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: baseVerticalPadding(context).add(baseHorizontalPadding(context)*2),
       width: mediaWidth(context, 1),
       child: SingleChildScrollView(
         child: Column(
