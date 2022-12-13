@@ -1,5 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:my_portfolio/pages/main_page.dart';
 import 'package:my_portfolio/pages/portfolio_page/portfolio_bayabas_page.dart';
 import 'package:my_portfolio/pages/portfolio_page/portfolio_kaminavi_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -22,6 +25,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
       body: Stack(
         alignment: AlignmentDirectional.bottomEnd,
         children: [
+          // CupertinoButton(child: Icon(Icons.home_outlined,color: Colors.black,), onPressed:()=> Get.to(()=> MainPage())),
           CarouselSlider(
             items: [
               PortfolioBayabas(),

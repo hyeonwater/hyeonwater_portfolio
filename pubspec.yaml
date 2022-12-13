@@ -44,6 +44,7 @@ dependencies:
   email_validator: ^2.1.17
   carousel_slider: ^4.1.1
   smooth_page_indicator: ^1.0.0+2
+  random_text_reveal: ^0.0.5
 
 dev_dependencies:
   flutter_test:

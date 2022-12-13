@@ -71,20 +71,29 @@ class AboutPageBody extends StatelessWidget {
           Text('뉴로서킷 : 2022.03 ~ (현재)',style: CustomTextStyle.w600(context,scale: 0.025),),
           Row(
             children: [
-              Container(
-                margin: baseVerticalPadding(context)/2,
-                  child: Text('바야바즈 앱 (2022.05 ~ 2022.07)',style: CustomTextStyle.w500(context,scale: 0.02))),
-              CupertinoButton(
-                  child: FaIcon(FontAwesomeIcons.android,color: Colors.black,size: mediaHeight(context, 0.02),),
-              onPressed: (){
-                    openURL(url: 'https://play.google.com/store/apps/details?id=com.neurocircuit.bayabas.flutter');
-              }
-              ),
-              CupertinoButton(
-                  child: FaIcon(FontAwesomeIcons.apple,color: Colors.black,size: mediaHeight(context, 0.02),),
-                  onPressed: (){
-                    openURL(url: 'https://apps.apple.com/kr/app/%EB%B0%94%EC%95%BC%EB%B0%94%EC%A6%88/id1631768678');
-                  }
+              Expanded(
+                flex: 3,
+                child : Container(
+                  margin: baseVerticalPadding(context)/2,
+                  child: Text('바야바즈 앱 (2022.05 ~ 2022.07)',style: CustomTextStyle.w500(context,scale: 0.02))),),
+              Expanded(
+                flex: 2,
+                child: Row(
+                  children: [
+                    CupertinoButton(
+                        child: FaIcon(FontAwesomeIcons.android,color: Colors.black,size: mediaHeight(context, 0.02),),
+                    onPressed: (){
+                          openURL(url: 'https://play.google.com/store/apps/details?id=com.neurocircuit.bayabas.flutter');
+                    }
+                    ),
+                    CupertinoButton(
+                        child: FaIcon(FontAwesomeIcons.apple,color: Colors.black,size: mediaHeight(context, 0.02),),
+                        onPressed: (){
+                          openURL(url: 'https://apps.apple.com/kr/app/%EB%B0%94%EC%95%BC%EB%B0%94%EC%A6%88/id1631768678');
+                        }
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
