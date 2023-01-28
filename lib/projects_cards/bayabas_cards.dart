@@ -38,7 +38,7 @@ class BayaBasCard extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontFamily: "NotoSansCJKKR",
                       fontStyle:  FontStyle.normal,
-                      fontSize: mediaHeight(context, 0.035)
+                      fontSize: 36
                   ),),
                   onPressed: () => Get.back()),
               Container(
@@ -57,7 +57,7 @@ class BayaBasCard extends StatelessWidget {
                                 color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                 fontWeight: FontWeight.w700,
                                 fontFamily: "NotoSansCJKKR",
-                                fontSize: mediaHeight(context, 0.021)
+                                fontSize: 20
                             ),
                             ),
                             Container(
@@ -69,7 +69,7 @@ class BayaBasCard extends StatelessWidget {
                                     color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                     fontWeight: FontWeight.w700,
                                     fontFamily: "NotoSansCJKKR",
-                                    fontSize: mediaWidth(context, 0.016)
+                                    fontSize: 15
                                 ),
                             ),
                             Text("바야바즈는 습관을 개선하여 탈모를 예방한다는 목표를 가지고 만들어진 앱으로 습관 관리 개선 및 나의 두피 진단 등 콘텐츠를 이용할 수 있으며 그로 인해 얻어지는 화폐 개념의 구아바를 이용하여 제품 및 여러 콘텐츠를 즐길 수 있는 앱 입니다.프런트 개발자 2명, 백엔드 개발자 2명으로 이루어진 팀에서 프런트엔드 개발 포지션을 맡아 Flutter를 이용하여 진행하였습니다.프런트 개발 중 50%를 직접 구현하였으며 UI, RESTFul API 서버 통신, 배포, 유지보수등 많은 부분을 맡아 진행하였습니다. 또한 메인 콘텐츠로 개발된 진단부분의 경우 기획을 직접 하였으며, 디자인 작업에 참여 하였습니다.",style: TextStyle(
@@ -77,7 +77,7 @@ class BayaBasCard extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 fontFamily: "NotoSansCJKKR",
                                 fontStyle:  FontStyle.normal,
-                                fontSize: mediaHeight(context, 0.016)
+                                fontSize: 15
                             ),),
                             Text(
                                 "개발 기간",
@@ -85,7 +85,7 @@ class BayaBasCard extends StatelessWidget {
                                     color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                     fontWeight: FontWeight.w700,
                                     fontFamily: "NotoSansCJKKR",
-                                    fontSize: mediaHeight(context, 0.016)
+                                    fontSize:15
                                 ),
                             ),
                             Text(
@@ -94,7 +94,7 @@ class BayaBasCard extends StatelessWidget {
                                     color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                     fontWeight: FontWeight.w500,
                                     fontFamily: "NotoSansCJKKR",
-                                    fontSize: mediaHeight(context, 0.015)
+                                    fontSize:14
                                 ),
                             ),
                             Text(
@@ -103,7 +103,7 @@ class BayaBasCard extends StatelessWidget {
                                   color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                   fontWeight: FontWeight.w700,
                                   fontFamily: "NotoSansCJKKR",
-                                  fontSize: mediaHeight(context, 0.016)
+                                  fontSize:15
                               ),
                             ),
                             Container(
@@ -119,7 +119,7 @@ class BayaBasCard extends StatelessWidget {
                                     color: darkMode ? Color(0xff2c2c2c) :Color(0xffFFFFFF),
                                     fontWeight: FontWeight.w500,
                                     fontFamily: "NotoSansCJKKR",
-                                    fontSize: mediaHeight(context, 0.015)
+                                    fontSize: 15
                                 ),),
                                 backgroundColor: darkMode ? Color(0xff717171) : Color(0xffE8E8E8),
                                 progressColor: darkMode ? Color(0xffFFFFFF) : Color(0xff7b7b7b),
@@ -131,7 +131,7 @@ class BayaBasCard extends StatelessWidget {
                                   color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                   fontWeight: FontWeight.w700,
                                   fontFamily: "NotoSansCJKKR",
-                                  fontSize: mediaHeight(context, 0.016)
+                                  fontSize: 15
                               ),
                             ),
                             Text(
@@ -140,7 +140,7 @@ class BayaBasCard extends StatelessWidget {
                                   color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                   fontWeight: FontWeight.w500,
                                   fontFamily: "NotoSansCJKKR",
-                                  fontSize: mediaHeight(context, 0.015)
+                                  fontSize: 14
                               ),
                             ),
                             Text(
@@ -149,7 +149,7 @@ class BayaBasCard extends StatelessWidget {
                                   color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                   fontWeight: FontWeight.w700,
                                   fontFamily: "NotoSansCJKKR",
-                                  fontSize: mediaHeight(context, 0.016)
+                                  fontSize: 15
                               ),
                             ),
                             Text(
@@ -158,7 +158,7 @@ class BayaBasCard extends StatelessWidget {
                                     color:darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                     fontWeight: FontWeight.w500,
                                     fontFamily: "NotoSansCJKKR",
-                                    fontSize: mediaHeight(context, 0.015)
+                                    fontSize: 14
                                 ),
                             ),
                             Container(
@@ -179,7 +179,7 @@ class BayaBasCard extends StatelessWidget {
                                             color:Color(0xff555969),
                                             fontWeight: FontWeight.w400,
                                             fontFamily: "NotoSansCJKKR",
-                                            fontSize: mediaHeight(context, 0.013)
+                                            fontSize: 12
                                         ),
                                         ),
                                       alignment: Alignment.center,
@@ -193,7 +193,7 @@ class BayaBasCard extends StatelessWidget {
                                   color:darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                   fontWeight: FontWeight.w500,
                                   fontFamily: "NotoSansCJKKR",
-                                  fontSize: mediaHeight(context, 0.015)
+                                  fontSize: 14
                               ),
                             ),
                             Container(
@@ -219,7 +219,7 @@ class BayaBasCard extends StatelessWidget {
                                             color:Color(0xff555969),
                                             fontWeight: FontWeight.w400,
                                             fontFamily: "NotoSansCJKKR",
-                                            fontSize: mediaHeight(context, 0.013)
+                                            fontSize: 12
                                         ),
                                         ),
                                         alignment: Alignment.center,
