@@ -3,9 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../common.dart';
-import '../projects_cards/bayabas_cards.dart';
-import '../projects_cards/kaminavi_card.dart';
+import '../projects_cards/desktop_bayabas_cards.dart';
+import '../projects_cards/desktop_kaminavi_card.dart';
+import '../projects_cards/mobile_bayabas_card.dart';
+import '../projects_cards/mobile_kaminavi_card.dart';
+import '../projects_cards/mobile_portfolio_card.dart';
 import '../projects_cards/portfoilo_card.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class MobilePage extends StatelessWidget {
   const MobilePage({Key? key,required this.darkMode}) : super(key: key);
@@ -20,17 +25,31 @@ class MobilePage extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Container(
-                    width: 503,
-                    height: 671,
-                    child: ClipRRect(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(30),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("@Flutter 개발자 김현수",
+                        style: const TextStyle(
+                            color:  const Color(0xff707070),
+                            fontWeight: FontWeight.w400,
+                            fontFamily: "NotoSansCJKKR",
+                            fontStyle:  FontStyle.normal,
+                            fontSize: 15.0
                         ),
-                        child: Image.asset('assets/png/main.png',fit: BoxFit.cover,)),
+                      ),
+                      Container(
+                        width: 503,
+                        height: 500,
+                        child: ClipRRect(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(30),
+                            ),
+                            child: Image.asset('assets/png/main.png',fit: BoxFit.cover,)),
+                      ),
+                    ],
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 50),
+                    margin: EdgeInsets.only(top: 50),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,7 +73,8 @@ class MobilePage extends StatelessWidget {
                                 color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                 fontWeight: FontWeight.w400,
                                 fontFamily: "NotoSansCJKKR",
-                                fontSize: 20
+                                fontSize: 20,
+                                height: 1.5
                             ),
                           ),
                         ),
@@ -64,7 +84,8 @@ class MobilePage extends StatelessWidget {
                               color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                               fontWeight: FontWeight.w400,
                               fontFamily: "NotoSansCJKKR",
-                              fontSize: 20
+                              fontSize: 20,
+                              height: 1.5
                           ),
                         ),
                         Container(
@@ -78,28 +99,44 @@ class MobilePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text(
-                          "Email.  hs97kim@gmail.com",
-                          style: TextStyle(
-                              color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "NotoSansCJKKR",
-                              fontStyle:  FontStyle.normal,
-                              fontSize: 20
+                        CupertinoButton(
+                          padding: EdgeInsets.zero,
+                          child: Text(
+                            "Email.  hs97kim@gmail.com",
+                            style: TextStyle(
+                                color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "NotoSansCJKKR",
+                                fontStyle:  FontStyle.normal,
+                                fontSize: 20
+                            ),
                           ),
+                          onPressed: (){
+                            launchUrl(
+                                Uri.parse('mailto:hs97kim@gmail.com')
+                            );
+                          },
                         ),
                         SizedBox(
                           height: 10,
                         ),
-                        Text(
-                          "Phone. 010-9787-6617",
-                          style: TextStyle(
-                              color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "NotoSansCJKKR",
-                              fontStyle:  FontStyle.normal,
-                              fontSize: 20
+                        CupertinoButton(
+                          padding: EdgeInsets.zero,
+                          child: Text(
+                            "Phone. 010-9787-6617",
+                            style: TextStyle(
+                                color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "NotoSansCJKKR",
+                                fontStyle:  FontStyle.normal,
+                                fontSize: 20
+                            ),
                           ),
+                          onPressed: (){
+                            launchUrl(
+                                Uri.parse('tel: 010 9787 6617')
+                            );
+                          },
                         ),
                         Container(
                           margin:EdgeInsets.only(top: 20,bottom: 20),
@@ -112,15 +149,41 @@ class MobilePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text(
-                          "GitHub. https://github.com/hyeonwater",
-                          style: TextStyle(
-                              color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "NotoSansCJKKR",
-                              fontStyle:  FontStyle.normal,
-                              fontSize: 20
+                        CupertinoButton(
+                          padding: EdgeInsets.zero,
+                          child: Text(
+                            "GitHub. https://github.com/hyeonwater",
+                            style: TextStyle(
+                                color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "NotoSansCJKKR",
+                                fontStyle:  FontStyle.normal,
+                                fontSize: 20
+                            ),
                           ),
+                          onPressed: (){
+                            launchUrl(
+                                Uri.parse("https://github.com/hyeonwater")
+                            );
+                          },
+                        ),
+                        CupertinoButton(
+                          padding: EdgeInsets.zero,
+                          child: Text(
+                            "Notion. https://rough-text-cc0.notion.site/274d6025ec6d4327a87f1a4a9881bf2d",
+                            style: TextStyle(
+                                color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "NotoSansCJKKR",
+                                fontStyle:  FontStyle.normal,
+                                fontSize: 20
+                            ),
+                          ),
+                          onPressed: (){
+                            launchUrl(
+                                Uri.parse("https://rough-text-cc0.notion.site/274d6025ec6d4327a87f1a4a9881bf2d")
+                            );
+                          },
                         ),
                       ],
                     ),
@@ -132,7 +195,7 @@ class MobilePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin:EdgeInsets.only(top: 80,bottom: 20),
+                      margin:EdgeInsets.only(top: 20,bottom: 20),
                       child: Text("Career",
                         style: TextStyle(
                             color:  Color(0xff2a6ecb),
@@ -142,7 +205,8 @@ class MobilePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           margin: EdgeInsets.only(bottom: 5),
@@ -217,12 +281,14 @@ class MobilePage extends StatelessWidget {
                     children: [
                       CupertinoButton(
                         child: Image.asset('assets/png/project_01.png'),
-                        onPressed: () =>Get.dialog(BayaBasCard(darkMode: darkMode)),
+                        onPressed: () =>Get.dialog(MobileBayaBasCard(darkMode: darkMode)),
                       ),
                       CupertinoButton(
                         child: Image.asset('assets/png/project_02.png'),
-                        onPressed: ()=> Get.dialog(KaminaviCard()),),
-                      PortFoilioCard(),
+                        onPressed: ()=> Get.dialog(MobilekaminaviCard(darkMode: darkMode,)),),
+                      CupertinoButton(
+                        child: Image.asset('assets/png/portfolio.png'),
+                        onPressed: ()=> Get.dialog(MobilePortFolioCard(darkMode: darkMode,)),),
                     ]
                 ),
               )
