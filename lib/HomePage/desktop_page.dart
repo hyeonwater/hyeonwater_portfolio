@@ -67,7 +67,20 @@ class DeskTopPage extends StatelessWidget {
                         Container(
                           margin:EdgeInsets.only(bottom: 30),
                           child: Text(
-                            "안녕하세요. Flutter 개발자 김현수입니다.스타트업에서 앱 서비스를 개발 및 배포, 운영을 해본 경험이 있습니다.주로 프론트 개발을 맡아 진행하였지만 작은 규모의 스타트업 특성상기획 및 디자인, 개발파트에서는 앱 개발을 경험해볼 수 있었습니다. 또한, 작은 규모에 팀에서 투자를 유치 받으며 직원이 10명 이상으로성장했던 경험이 있습니다.",
+                            "안녕하세요. Flutter 개발자 김현수입니다.\n\n대학교에서 Java를 이용해 Android 수업 통해 앱개발을 처음 접했습니다. 앱 개발에 흥미를 얻던 중 Flutter를 알게되었습니다. 한 코드로 여러 플랫폼을 만들 수 있다는 것이 흥미로워 접하게 되었습니다.",
+                            style: TextStyle(
+                                color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "NotoSansCJKKR",
+                                fontSize: 20,
+                                height: 1.5
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin:EdgeInsets.only(bottom: 30),
+                          child: Text(
+                            "스타트업에서 Flutter를 이용하여 앱 출시까지 경험이 있습니다. 주로 프런트 개발을 맡아 진행하였지만 작은 규모의 스타트업 특성상 기획 및 디자인, 개발 분야에서는 앱 개발을 진행하였습니다. 또한 개발된 앱을 가지고 독일 iENA 전시회에서 동상 수상까지 경험이 있습니다.",
                             style: TextStyle(
                                 color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                 fontWeight: FontWeight.w400,
@@ -78,7 +91,7 @@ class DeskTopPage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "소프트웨어 개발자로서 클린 코드가 중요하다고 생각합니다.개발자 개개인의 코드 스타일은 다 다르다고 생각합니다. 클린 코드를 통해 상대방이 저의 코드를 보기 편하고 또한 내가 한 코드를 유지 보수하기 용이하다고 생각하기 때문입니다.",
+                          "앱 개발자로서 남들이 이해하기 쉬운 코드가 잘 짠 코드라 생각해 클린 코드 작성, 코드 재활용에 대하여 항상 고민하고 적용하려고 하고 있습니다. 그리고 만족스러운 결과가 눈에 보일 때까지 계속 매달리는 끈기 또한 자신 있습니다.",
                           style: TextStyle(
                               color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                               fontWeight: FontWeight.w400,
