@@ -26,14 +26,17 @@ class DeskTopPage extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("@Flutter 개발자 김현수",
-                        style: const TextStyle(
-                            color:  const Color(0xff707070),
-                            fontWeight: FontWeight.w400,
-                            fontFamily: "NotoSansCJKKR",
-                            fontStyle:  FontStyle.normal,
-                            fontSize: 15.0
-                        ),
+                    Container(
+                      margin: EdgeInsets.only(bottom: 10),
+                      child: Text("@Flutter 개발자 김현수",
+                          style: const TextStyle(
+                              color:  const Color(0xff707070),
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "NotoSansCJKKR",
+                              fontStyle:  FontStyle.normal,
+                              fontSize: 15.0
+                          ),
+                      ),
                     ),
                     Container(
                       width: 503,
@@ -162,35 +165,40 @@ class DeskTopPage extends StatelessWidget {
                             ),
                           ),
                         ),
+                        // CupertinoButton(
+                        //   padding: EdgeInsets.zero,
+                        //   child: Text(
+                        //     "GitHub. https://github.com/hyeonwater",
+                        //     style: TextStyle(
+                        //         color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                        //         fontWeight: FontWeight.w400,
+                        //         fontFamily: "NotoSansCJKKR",
+                        //         fontStyle:  FontStyle.normal,
+                        //         fontSize: 20
+                        //     ),
+                        //   ),
+                        //   onPressed: (){
+                        //     launchUrl(
+                        //       Uri.parse("https://github.com/hyeonwater")
+                        //     );
+                        //   },
+                        // ),
                         CupertinoButton(
                           padding: EdgeInsets.zero,
-                          child: Text(
-                            "GitHub. https://github.com/hyeonwater",
-                            style: TextStyle(
-                                color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "NotoSansCJKKR",
-                                fontStyle:  FontStyle.normal,
-                                fontSize: 20
-                            ),
-                          ),
-                          onPressed: (){
-                            launchUrl(
-                              Uri.parse("https://github.com/hyeonwater")
-                            );
-                          },
-                        ),
-                        CupertinoButton(
-                          padding: EdgeInsets.zero,
-                          child: Text(
-                            "Notion. https://rough-text-cc0.notion.site/274d6025ec6d4327a87f1a4a9881bf2d",
-                            style: TextStyle(
-                                color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "NotoSansCJKKR",
-                                fontStyle:  FontStyle.normal,
-                                fontSize: 20
-                            ),
+                          child: Column(
+                            children: [
+                              Image.asset('assets/png/Notion_app_logo.png',scale: 10,),
+                              Text(
+                                "Notion 링크",
+                                style: TextStyle(
+                                    color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: "NotoSansCJKKR",
+                                    fontStyle:  FontStyle.normal,
+                                    fontSize: 20
+                                ),
+                              ),
+                            ],
                           ),
                           onPressed: (){
                             launchUrl(
@@ -273,7 +281,7 @@ class DeskTopPage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin:EdgeInsets.only(top: mediaHeight(context, 0.02)),
+                    margin:EdgeInsets.only(top: 35),
                     child: Text("Projects",
                       style: TextStyle(
                           color:  Color(0xff2a6ecb),
