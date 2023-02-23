@@ -5,6 +5,7 @@ import 'package:my_portfolio/projects_cards/desktop_portfolio_card.dart';
 
 import '../common.dart';
 import '../projects_cards/desktop_bayabas_cards.dart';
+import '../projects_cards/desktop_bayabs_renewal_card.dart';
 import '../projects_cards/desktop_kaminavi_card.dart';
 import '../projects_cards/portfoilo_card.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -301,6 +302,9 @@ class DeskTopPage extends StatelessWidget {
                     CupertinoButton(
                       child: Image.asset('assets/png/portfolio.png'),
                       onPressed: ()=> Get.dialog(DeskTopPortfolioCard(darkMode: darkMode,)),),
+                    CupertinoButton(
+                      child: Image.asset('assets/png/bayabas_renewal.png'),
+                      onPressed: ()=> Get.dialog(DeskTopBayaBasRenewalCard(darkMode: darkMode,)),),
                   ]
               ),
             )

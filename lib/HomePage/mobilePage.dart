@@ -6,6 +6,7 @@ import '../common.dart';
 import '../projects_cards/desktop_bayabas_cards.dart';
 import '../projects_cards/desktop_kaminavi_card.dart';
 import '../projects_cards/mobile_bayabas_card.dart';
+import '../projects_cards/mobile_bayabas_renewal_card.dart';
 import '../projects_cards/mobile_kaminavi_card.dart';
 import '../projects_cards/mobile_portfolio_card.dart';
 import '../projects_cards/portfoilo_card.dart';
@@ -302,6 +303,9 @@ class MobilePage extends StatelessWidget {
                       CupertinoButton(
                         child: Image.asset('assets/png/portfolio.png'),
                         onPressed: ()=> Get.dialog(MobilePortFolioCard(darkMode: darkMode,)),),
+                      CupertinoButton(
+                        child: Image.asset('assets/png/bayabas_renewal.png'),
+                        onPressed: ()=> Get.dialog(MobileBayaBasRenewalCard(darkMode: darkMode,)),),
                     ]
                 ),
               )
