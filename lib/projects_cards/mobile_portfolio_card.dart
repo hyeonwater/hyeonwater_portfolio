@@ -184,7 +184,7 @@ class MobilePortFolioCard extends StatelessWidget {
                         Container(
                           margin: EdgeInsets.only(bottom: 10),
                           child: Text(
-                            "·프론트엔드 프레임워크",
+                            "· 프레임워크",
                             style: TextStyle(
                                 color:darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                 fontWeight: FontWeight.w500,

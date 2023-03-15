@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import '../common.dart';
@@ -166,46 +167,59 @@ class MobilePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        // CupertinoButton(
-                        //   padding: EdgeInsets.zero,
-                        //   child: Text(
-                        //     "GitHub. https://github.com/hyeonwater",
-                        //     style: TextStyle(
-                        //         color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
-                        //         fontWeight: FontWeight.w400,
-                        //         fontFamily: "NotoSansCJKKR",
-                        //         fontStyle:  FontStyle.normal,
-                        //         fontSize: 20
-                        //     ),
-                        //   ),
-                        //   onPressed: (){
-                        //     launchUrl(
-                        //         Uri.parse("https://github.com/hyeonwater")
-                        //     );
-                        //   },
-                        // ),
-                        CupertinoButton(
-                          padding: EdgeInsets.zero,
-                          child: Column(
-                            children: [
-                              Image.asset('assets/png/Notion_app_logo.png',scale: 10,),
-                              Text(
-                                "Notion 링크",
-                                style: TextStyle(
-                                    color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
-                                    fontWeight: FontWeight.w400,
-                                    fontFamily: "NotoSansCJKKR",
-                                    fontStyle:  FontStyle.normal,
-                                    fontSize: 20
-                                ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            CupertinoButton(
+                              padding: EdgeInsets.zero,
+                              child: Column(
+                                children: [
+                                  FaIcon(FontAwesomeIcons.github,color:darkMode ? Color(0xffFFFFFF) :Colors.black,size: 40,),
+                                  Text(
+                                    "GitHub.",
+                                    style: TextStyle(
+                                        color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                        fontWeight: FontWeight.w400,
+                                        fontFamily: "NotoSansCJKKR",
+                                        fontStyle:  FontStyle.normal,
+                                        fontSize: 20
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                          onPressed: (){
-                            launchUrl(
-                                Uri.parse("https://rough-text-cc0.notion.site/274d6025ec6d4327a87f1a4a9881bf2d")
-                            );
-                          },
+                              onPressed: (){
+                                launchUrl(
+                                    Uri.parse("https://github.com/hyeonwater")
+                                );
+                              },
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            CupertinoButton(
+                              padding: EdgeInsets.zero,
+                              child: Column(
+                                children: [
+                                  Image.asset('assets/png/Notion_app_logo.png',scale: 12,),
+                                  Text(
+                                    "Notion.",
+                                    style: TextStyle(
+                                        color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
+                                        fontWeight: FontWeight.w400,
+                                        fontFamily: "NotoSansCJKKR",
+                                        fontStyle:  FontStyle.normal,
+                                        fontSize: 20
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              onPressed: (){
+                                launchUrl(
+                                    Uri.parse("https://rough-text-cc0.notion.site/274d6025ec6d4327a87f1a4a9881bf2d")
+                                );
+                              },
+                            ),
+                          ],
                         ),
                       ],
                     ),
@@ -272,7 +286,7 @@ class MobilePage extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "일본 1위 탈모 개선 클리닉 회사와 협업을 진행하는 습관 개선 탈모 예방 서비스 플랫폼 스타트업으로 프론트엔드 포지션을 맡아서 진행하였습니다. ",
+                      "일본 1위 탈모 개선 클리닉 회사와 협업을 진행하는 습관 개선 탈모 예방 서비스 플랫폼 스타트업으로 앱개발 포지션을 맡아서 진행하였습니다. ",
                       style: TextStyle(
                           color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                           fontWeight: FontWeight.w400,

@@ -77,7 +77,7 @@ class DeskTopKaminaviCard extends StatelessWidget {
                           ),
                           Container(
                             margin: EdgeInsets.only(bottom: 10),
-                            child: Text("카미나비 앱은 일본 탈모회사 1위 기업인 Reve21과의 협업을 진행을 하였습니다. 두피 진단, 미션, 이벤트 뽑기를 통해 사용자들의 두피상태에 맞게 매일 바뀌는 미션을 수행함으로써 탈모를 치료 할 수 있게 할수있는 앱 입니다. 개발에서는 프런트엔드 개발 포지션을 맡아 Flutter를 이용하여 진행하였습니다.프런트 개발 중 30%를 직접 구현하였으며 일본회사와의 소통, UI 제작, REST API 서버 통신, 배포, 유지보수등 많은 부분을 맡아 진행하였습니다.",style: TextStyle(
+                            child: Text("카미나비 앱은 일본 탈모회사 1위 기업인 Reve21과의 협업을 진행을 하였습니다. 두피 진단, 미션, 이벤트 뽑기를 통해 사용자들의 두피상태에 맞게 매일 바뀌는 미션을 수행함으로써 탈모를 치료 할 수 있게 할수있는 앱 입니다. 개발에서는 앱개발 포지션을 맡아 Flutter를 이용하여 진행하였습니다.프런트 개발 중 30%를 직접 구현하였으며 일본회사와의 소통, UI 제작, REST API 서버 통신, 배포, 유지보수등 많은 부분을 맡아 진행하였습니다.",style: TextStyle(
                                 color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                 fontWeight: FontWeight.w500,
                                 fontFamily: "NotoSansCJKKR",
@@ -168,7 +168,7 @@ class DeskTopKaminaviCard extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.only(bottom: 5),
                             child: Text(
-                              "적용한 프레임워크 및 주요 패키지",
+                              "적용한 트프레임워크 및 주요 패키지",
                               style: TextStyle(
                                   color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                   fontWeight: FontWeight.w700,
@@ -180,7 +180,7 @@ class DeskTopKaminaviCard extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.only(bottom: 10),
                             child: Text(
-                              "·프론트엔드 프레임워크",
+                              "· 프레임워크",
                               style: TextStyle(
                                   color:darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                   fontWeight: FontWeight.w500,
