@@ -86,7 +86,7 @@ class MobilePage extends StatelessWidget {
                         Container(
                           margin:EdgeInsets.only(bottom: 30),
                           child: Text(
-                            "스타트업에서 Flutter를 이용하여 앱 출시까지 경험이 있습니다. 주로 프런트 개발을 맡아 진행하였지만 작은 규모의 스타트업 특성상 기획 및 디자인, 개발 분야에서는 앱 개발을 진행하였습니다. 또한 개발된 앱을 가지고 독일 iENA 전시회에서 동상 수상까지 경험이 있습니다.",
+                            "스타트업에서 Flutter를 이용하여 앱 출시까지 경험이 있습니다. 주로 클라이언트 앱 개발을 맡아 진행하였지만 작은 규모의 스타트업 특성상 기획 및 디자인, 개발 분야에서는 앱 개발을 진행하였습니다. 또한 개발된 앱을 가지고 독일 iENA 전시회에서 동상 수상까지 경험이 있습니다.",
                             style: TextStyle(
                                 color:  darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                 fontWeight: FontWeight.w400,

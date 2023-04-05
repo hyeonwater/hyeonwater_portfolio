@@ -79,7 +79,7 @@ class DeskTopBayaBasRenewalCard extends StatelessWidget {
                           ),
                           Container(
                             margin: EdgeInsets.only(bottom: 10),
-                            child: Text("기존에 출시하였던 바야바즈를 리뉴얼 작업을 진행했습니다. 리뉴얼 작업에서는 디자인, API, 기획도 바뀌는 상황이어서 앱을 새로 만드는 작업하는 상황이었습니다. 프런트 개발자 1명, 백엔드 개발자 1명으로 이루어진 팀에서 앱개발 포지션을 맡아 Flutter를 이용하여 진행하였습니다. 프런트 개발 중 100%를 직접 구현하였으며 UI, RESTFul API 서버 통신, 배포, 유지보수 등 많은 부분을 맡아 진행하였습니다.",style: TextStyle(
+                            child: Text("기존에 출시하였던 바야바즈를 리뉴얼 작업을 진행했습니다. 리뉴얼 작업에서는 디자인, API, 기획도 바뀌는 상황이어서 앱을 새로 만드는 작업하는 상황이었습니다. 앱 개발자 1명, 백엔드 개발자 1명으로 이루어진 팀에서 앱개발 포지션을 맡아 Flutter를 이용하여 진행하였습니다. Flutter 개발 중 100%를 직접 구현하였으며 UI, RESTFul API 서버 통신, 배포, 유지보수 등 많은 부분을 맡아 진행하였습니다.",style: TextStyle(
                                 color: darkMode ? Color(0xffFFFFFF) : Color(0xff2c2c2c),
                                 fontWeight: FontWeight.w500,
                                 fontFamily: "NotoSansCJKKR",
